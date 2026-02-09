@@ -144,6 +144,7 @@ CharacterController:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -166,13 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2922308556bc98e4898cb3309250e781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1.5
-  sprintSpeed: 3
-  crouchSpeed: 0.5
-  jumpSpeed: 2
+  walkSpeed: 3
+  sprintSpeed: 5
+  crouchSpeed: 1.5
+  jumpSpeed: 4
   gravity: 9.81
   slideDuration: 0.7
-  slideSpeed: 3.5
+  slideSpeed: 6
   mouseSensitivity: 2
   strafeTiltAmount: 2
   playerCamera: {fileID: 9156347143994207885}
@@ -210,11 +211,11 @@ MonoBehaviour:
   swimSpeed: 4
   swimSprintSpeed: 6
   waterDrag: 2
+  waterUpForce: 2
   waterMask:
     serializedVersion: 2
     m_Bits: 16
   isInWater: 0
-  currentStateDebug: 1
 --- !u!114 &256324496809331631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,9 +323,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
